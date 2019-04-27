@@ -1,0 +1,6 @@
+set root='(hd0,2)'
+search --file --no-floppy --set=root /kernel
+linux /kernel root=/dev/ram0 androidboot.hardware=remix_x86_64
+androidboot.selinux=permissive quiet SERIAL=random logo.showlogo=1 REMOUNT_RW=1 DATA=/data
+initrd /initrd.img
+
