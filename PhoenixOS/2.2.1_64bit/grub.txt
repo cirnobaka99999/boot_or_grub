@@ -1,0 +1,3 @@
+set root='(hd0,1)'
+linux /PhoenixOS/kernel quiet CMDLINE SRC=/PhoenixOS
+initrd /PhoenixOS/initrd.img

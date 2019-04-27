@@ -1,0 +1,9 @@
+default=0
+timeout=6
+splashimage=/grub/android-x86.xpm.gz
+root (hd0,0)
+
+title Phoenix OS
+	kernel /PhoenixOS/kernel quiet CMDLINE SRC=/PhoenixOS
+	initrd /PhoenixOS/initrd.img
+
